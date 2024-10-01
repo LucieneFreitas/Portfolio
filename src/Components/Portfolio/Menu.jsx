@@ -16,6 +16,7 @@ const Menu = [
     image: doguinhos, // Agora referenciando corretamente a imagem importada
     title: 'Clinica Veterinaria',
     category: 'Site',
+    link: 'https://lucienefreitas.github.io/doguinhos/', // Adicionei o link aqui
   },
   {
     id: 3,
