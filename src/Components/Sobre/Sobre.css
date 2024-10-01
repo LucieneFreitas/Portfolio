@@ -68,7 +68,7 @@
   width: 50%;
   height: 8px;
   border-radius: 50px;
-  background: linear-gradient(264deg, #da9225 -5.09%, #B923E1 106.28%);
+  background: linear-gradient(270deg, #04accd 50.41%, #e123a0 90.2%);
 }
 
 .sobre-skill:hover{
@@ -94,7 +94,9 @@
 .sobre-conquista h1{
   font-size: 60px;
   font-weight: 700;
-  background: linear-gradient(270deg, #da9225 50.41%, #B923E1 90.2%);
+  /*background: linear-gradient(270deg, #da9225 50.41%, #B923E1 90.2%);*/
+  /*background: linear-gradient(267deg, #e65616 0.36%, #04accd 102.06%);*/
+  background: linear-gradient(270deg, #04accd 50.41%, #e123a0 90.2%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -107,5 +109,60 @@
 .sobre-conquista:hover{
   transform: scale(1.12);
   transition: 0.5s;
+}
+
+
+
+@media(max-width:768px){
+  .sobre{
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .sobre-titulo h1{
+    font-size: 50px;
+    padding: 0;
+  }
+  .sobre-titulo img{
+    width: 130px;
+    right: -20px;
+  }
+  .sobre-sections{
+    flex-direction: column;
+  }
+  .sobre-left{
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .sobre-left img{
+    width: 100%;
+  }
+  .sobre-text p{
+    font-size: 20px;
+  }
+  .sobre-skill{
+    gap: 20px;
+    align-items: center;
+  }
+  .sobre-skill p{
+    font-size: 20px;
+  }
+  .sobre-skill hr{
+    height: 6px;
+  }
+  .sobre-conquistas{
+    justify-content: space-between;
+  }
+  .sobre-conquista{
+    gap: 10px;
+  }
+  .sobre-conquista h1{
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .sobre-conquista p{
+    text-align: center;
+    font-size: 16px;
+  }
 }
 

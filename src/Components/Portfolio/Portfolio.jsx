@@ -5,14 +5,14 @@ import { useState } from 'react'
 export function Portfolio() {
   const [items, setItems] = useState(Menu);
   return (
-    <section className="work container section" id="work">
+    <section id='portfolio' className="work-container-section">
       <h2 className="section_titulo">Projetos</h2>
       <div className="work_filters">
         <span className="work_item" onClick={() => setItems(Menu)}>Everything</span>
-        <span className="work_item" onClick={() => setItems(Menu.filter(item => item.category === 'Creative'))}>Creative</span>
-        <span className="work_item" onClick={() => setItems(Menu.filter(item => item.category === 'Art'))}>Art</span>
-        <span className="work_item" onClick={() => setItems(Menu.filter(item => item.category === 'Design'))}>Design</span>
-        <span className="work_item" onClick={() => setItems(Menu.filter(item => item.category === 'Branding'))}>Branding</span>
+        <span className="work_item" onClick={() => setItems(Menu.filter(item => item.category === 'App'))}>App</span>
+        
+        <span className="work_item" onClick={() => setItems(Menu.filter(item => item.category === 'Site'))}>Site</span>
+        
       </div>
 
       <div className="work_container grid">

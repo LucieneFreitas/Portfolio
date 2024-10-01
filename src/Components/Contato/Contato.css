@@ -38,7 +38,7 @@
 .contato-left h1{
   font-size: 80px;
   font-weight: 700;
-  background: linear-gradient(270deg, #da9225 80%, #B923E1 100%);
+  background: linear-gradient(270deg, #04accd 50.41%, #e123a0 90.2%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,9 +51,10 @@
   line-height: 35px;
 }
 
+
 .contato-details{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 30px;
   color: #D8D8D8;
   font-size: 22px;
@@ -63,6 +64,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.contato-icon {
+  width: 20px; /* Define o tamanho menor do ícone */
+  height: auto;
+  filter: brightness(0) invert(1); /* Deixa o ícone branco */
 }
 
 .contato-right{
@@ -105,7 +112,7 @@
   border: none;
   color: white;
   border-radius: 50px;
-  background: linear-gradient(264deg, #da9225 -5.09%, #B923E1 106.28%);
+  background: linear-gradient(270deg, #04accd 50.41%, #e123a0 90.2%);
   font-size: 22px;
   padding: 20px 60px;
   margin-bottom: 50px;
@@ -116,4 +123,38 @@
 .contato-submit:hover{
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+
+/* Estilos responsivos para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+  .contato-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato-left, 
+  .contato-details {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .contato-left h1 {
+    font-size: 2rem;
+  }
+
+  .contato-left p {
+    font-size: 1.4rem;
+  }
+
+  .contato-detail {
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .contato-icon {
+    width: 30px;
+    height: 30px;
+  }
 }

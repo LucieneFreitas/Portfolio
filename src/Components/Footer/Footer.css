@@ -1,0 +1,44 @@
+.footer {
+  background-color: #010318;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 150px; /* Defina a largura da logo */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 30px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Deixa os ícones brancos */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+
+@media(max-width:768px){
+  .footer{
+    margin: 50px 70px;
+  }
+  .footer-top{
+    
+  }
+}
